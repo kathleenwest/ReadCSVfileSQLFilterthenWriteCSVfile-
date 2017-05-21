@@ -4,22 +4,17 @@ Simple PERL script to import a CSV file (contains records of data - could be a d
   ReadCSVfileSQLFilterthenWriteCSVfile 
   File: ReadCSVfileSQLFilterthenWriteCSVfile.pl
  
-  Description: Simple perl script to import a CSV file (contains records 
-  of data - could be a dump from a database), execute custom SQL, 
-  and write back to a CSV file.
- 
+
   This script uses an example of SQL to filter out select records
+  
   DBI is used in this example
  
-  How to Use
- 
-  >> ReadCSVfileSQLFilterthenWriteCSVfile.pl
-  Example: ReadCSVfileSQLFilterthenWriteCSVfile.pl
- 
   Input files: (same directory)
+  
   input.csv located in same directory as script
  
   Output files: (same directory)
+  
   output.csv
  
   CASE Example
@@ -27,23 +22,37 @@ Simple PERL script to import a CSV file (contains records of data - could be a d
   input.csv 
  
   RECORD,FOOD,COUNTRY,REGION,COLOR,SEQUENCE
+  
   422,TACO,FRANCE,SOUTH,RED,A
+  
   423,CHEESEBURGER,FRANCE,SOUTH,BLUE,B
+  
   424,BURRITO,FRANCE,SOUTH,GREEN,C
+  
   425,CAKE,FRANCE,SOUTH,YELLOW,D
+  
   426,CUPCAKE,FRANCE,SOUTH,PURPLE,E
+  
   427,STEAK,FRANCE,SOUTH,ORANGE,F
+  
   428,HAM,FRANCE,SOUTH,BLACK,A
+  
   429,EGGS,FRANCE,SOUTH,WHITE,B
+  
   ...
   
   output.csv (filter COLOR=GREEN, COUNTRY = FRANCE)
   
   RECORD,FOOD,COUNTRY,REGION,COLOR,SEQUENCE
+  
   424,BURRITO,FRANCE,SOUTH,GREEN,C
+  
   436,CHICKEN,FRANCE,SOUTH,GREEN,C
+  
   448,EGGS,FRANCE,SOUTH,GREEN,C
+  
   460,TACO,FRANCE,SOUTH,GREEN,C
+  
   ...
  
  

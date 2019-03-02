@@ -1,4 +1,7 @@
 # ReadCSVfileSQLFilterthenWriteCSVfile-
+
+Project Blog Article Here: https://portfolio.katiegirl.net/2019/03/02/using-perl-to-execute-sql-on-data/
+
 Simple PERL script to import a CSV file (contains records of data - could be a dump from a database), execute custom SQL, and write back to a CSV file.
 
   ReadCSVfileSQLFilterthenWriteCSVfile 
